@@ -6,6 +6,9 @@ html {
 .navbar a {
   color: #9D00FF;
   background-color: #343434;
+  font-weight: bold;
+  font-size: 32px;
+  -webkit-text-stroke: .5px black;
 }
 
 .dropBackground {
@@ -14,4 +17,30 @@ html {
 
 .title {
   color: #BE00FE;
+  padding-left: 6px;
+}
+
+.container {
+  padding-top: 24px;
+  margin: auto;
+}
+
+.content{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.label {
+  color: white;
+  font-weight: normal;
+}
+
+.input {
+  background-color: #343434;
+  color: white;
+}
+
+.input::placeholder {
+  color: gray;
 }

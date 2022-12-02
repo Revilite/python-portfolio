@@ -16,7 +16,11 @@
     />
   </head>
   <body>
-    <nav class="navbar has-background-dark " role="navigation" aria-label="main navigation">
+    <nav
+      class="navbar has-background-dark"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div class="navbar-brand">
         <a
           role="button"
@@ -42,12 +46,9 @@
     </nav>
     <div class="container">
       <h2 class="title is-1">{%block title%}About Me {% endblock %}</h2>
-      <p>
-        {% block content %}
-
-        {% endblock %}
-      </p>
+      <div class="content">{% block content %} {% endblock %}</div>
     </div>
   </body>
   <script src="{{ url_for('static', filename='index.js')}}"></script>
+  <script src="https://kit.fontawesome.com/5a9f48c8be.js" crossorigin="anonymous"></script>
 </html>

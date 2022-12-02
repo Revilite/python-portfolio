@@ -1,1 +1,23 @@
-{% extends "base.html" %} {% block title %} Contact {% endblock%}
+{% extends "base.html" %} {% block title %} Contact {% endblock%} {% block
+content %}
+
+<form>
+  <div class="field">
+    <label class="label">First and Last Name</label>
+    <div class="control">
+      <input class="input" type="text" placeholder="Full Name" name="name" />
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Email</label>
+    <div class="control has-icons-left">
+      <input class="input" type="email" placeholder="Enter Email Address">
+      <span class="icon is-small is-left">
+        <i class="fas fa-envelope"></i>
+      </span>
+    </div>
+  </div>
+</form>
+
+{% endblock%}
