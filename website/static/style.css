@@ -1,0 +1,17 @@
+body,
+html {
+  background-color: #121212;
+}
+
+.navbar a {
+  color: #9D00FF;
+  background-color: #343434;
+}
+
+.dropBackground {
+  background-color: #343434;
+}
+
+.title {
+  color: #BE00FE;
+}

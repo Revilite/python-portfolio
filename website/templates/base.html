@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css')}}"
+    />
+  </head>
+  <body>
+    <nav class="navbar has-background-dark " role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger toggle"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+          onclick="burgerButton()"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu toggle dropBackground">
+        <div class="navbar-start">
+          <a class="navbar-item" href="/">About Me</a>
+          <a class="navbar-item" href="/contact">Contact</a>
+          <a class="navbar-item" href="/projects">Projects</a>
+          <a class="navbar-item" href="/resume">Resume</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h2 class="title is-1">{%block title%}About Me {% endblock %}</h2>
+      <p>
+        {% block content %}
+
+        {% endblock %}
+      </p>
+    </div>
+  </body>
+  <script src="{{ url_for('static', filename='index.js')}}"></script>
+</html>
