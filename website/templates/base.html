@@ -12,7 +12,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="{{ url_for('static', filename='style.css')}}"
+      href="{{ url_for('static', filename='styles/style.css')}}"
     />
   </head>
   <body>
@@ -46,9 +46,28 @@
     </nav>
     <div class="container">
       <h2 class="title is-1">{%block title%}About Me {% endblock %}</h2>
-      <div class="content">{% block content %} {% endblock %}</div>
+      <div class="content">
+        {% block content %}
+        <div class="pictureContainer">
+          <img
+            src="{{ url_for('static', filename='photos/me.jpg')}}"
+            alt="Picture of Jacob Lockhart"
+          />
+        </div>
+        <p>
+          Hello! My name is Jacob Lockhart. I have recently graduated the
+          University of North Carolina at Charlotte coding bootcamp. I am currently
+          looking for jobs and have put in many applications. In the mean time I have
+          made a couple of side games including snake and what I like to call fishy game
+          which is a flappy bird type game.
+        </p>
+        {% endblock %}
+      </div>
     </div>
   </body>
-  <script src="{{ url_for('static', filename='index.js')}}"></script>
-  <script src="https://kit.fontawesome.com/5a9f48c8be.js" crossorigin="anonymous"></script>
+  <script src="{{ url_for('static', filename='scripts/index.js')}}"></script>
+  <script
+    src="https://kit.fontawesome.com/5a9f48c8be.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
