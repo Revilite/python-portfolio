@@ -1,6 +1,7 @@
 body,
 html {
   background-color: #121212;
+  height: 100vh;
 }
 
 .navbar a {
@@ -32,9 +33,9 @@ html {
   margin-right: auto;
 }
 
-img {
-  width: 40%;
-  height: 40%;
+.me {
+  width: 60%;
+  height: 60%;
   aspect-ratio: 4/3;
   left: auto;
   right: auto;
@@ -49,6 +50,15 @@ p {
   color: white;
   font-size: 24px;
 }
+
+.projectImage {
+  height: 40vh;
+}
+
+.projectItem {
+  color: white;
+}
+
 
 .label {
   color: white;
