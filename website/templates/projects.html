@@ -1,17 +1,16 @@
 {% extends "base.html" %} {% block title %} Projects {% endblock%} {% block
 content%}
 
-<div class="container">
-  <div class="projectItem">
-      <a href="https://revilite.github.io/Snake/" target="_blank">
-        <img
-          src="{{ url_for('static', filename='photos/snake.png')}}"
-          alt="Screenshot of snake game"
-          class="projectImage"
-        />
-      </a>
-    <h2 class="caption">Snake Game</h2>
-  </div>
+<div class="mainContainer">
+    <a href="https://revilite.github.io/Snake/" targer="_blank">
+      <img src="{{ url_for('static', filename='photos/snake.png')}}" alt="Screenshot of snake game" class="imageLink">
+    </a>
+    <h2>Snake Game</h2>
+
+    <a href="https://revilite.github.io/Snake/" targer="_blank">
+      <img src="{{ url_for('static', filename='photos/snake.png')}}" alt="Screenshot of snake game" class="imageLink">
+    </a>
+    <h2>Snake Game</h2>
 </div>
 
 {% endblock %}

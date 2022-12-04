@@ -43,7 +43,7 @@ html {
 
 .pictureContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
 }
 
 p {
@@ -51,18 +51,13 @@ p {
   font-size: 24px;
 }
 
-.projectImage {
-  height: 40vh;
-}
-
-.projectItem {
-  color: white;
-}
-
-
 .label {
   color: white;
   font-weight: normal;
+}
+
+.imageLink {
+  height: 40vh;
 }
 
 .input,

@@ -46,7 +46,6 @@
     </nav>
     <div class="container">
       <h2 class="title is-1">{%block title%}About Me {% endblock %}</h2>
-      <div class="content">
         {% block content %}
         <div class="pictureContainer">
           <img
@@ -63,7 +62,6 @@
           which is a flappy bird type game.
         </p>
         {% endblock %}
-      </div>
     </div>
   </body>
   <script src="{{ url_for('static', filename='scripts/index.js')}}"></script>
