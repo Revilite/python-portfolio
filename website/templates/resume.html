@@ -1,1 +1,11 @@
-{% extends "base.html" %} {% block title %} Resume {% endblock%}
+{% extends "base.html" %} {% block title %} Resume {% endblock%} {% block
+content%}
+<div class="resume">
+  <a
+    href="{{ url_for('static', filename='resume/Jacob Lockhart resume 2022.pdf')}}"
+    target="_blank"
+    class="resume"
+    >Link for resume</a
+  >
+</div>
+{% endblock %}

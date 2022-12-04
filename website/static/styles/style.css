@@ -82,6 +82,13 @@ h2 {
   height: 40vh;
 }
 
+.resume {
+  font-size: 56px;
+  text-align: center;
+  color: #BE00FE;
+  font-weight: bolder;
+}
+
 .input,
 .textarea {
   background-color: #343434;
